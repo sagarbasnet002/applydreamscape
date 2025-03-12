@@ -1,7 +1,5 @@
 
-import { Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { SearchBar } from "./SearchBar";
 
 export const Hero = () => {
   return (
@@ -17,16 +15,7 @@ export const Hero = () => {
         </p>
         
         <div className="max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
-          <div className="flex flex-col sm:flex-row gap-4 p-4 bg-white rounded-lg shadow-lg">
-            <Input 
-              placeholder="Search programs, universities, or countries..." 
-              className="flex-grow text-lg"
-            />
-            <Button className="bg-primary hover:bg-primary-dark text-white px-8">
-              <Search className="mr-2 h-5 w-5" />
-              Search
-            </Button>
-          </div>
+          <SearchBar />
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-fade-up" style={{ animationDelay: "0.6s" }}>
