@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { logoImage } from "../assets";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,9 @@ export const Navbar = () => {
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">ApplyDreamscape</h1>
+          <div className="flex-shrink-0 flex items-center">
+            <img src={logoImage} alt="ApplyDreamscape" className="h-10 w-auto" />
+            <h1 className="text-2xl font-bold text-primary ml-2">ApplyDreamscape</h1>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

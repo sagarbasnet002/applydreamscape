@@ -1,10 +1,14 @@
 
 import { SearchBar } from "./SearchBar";
+import heroImage from "../assets/hero-background.jpg";
 
 export const Hero = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-primary-light/10 to-white pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 text-center">
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img src={heroImage} alt="Students at university" className="w-full h-full object-cover" />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-up">
           Your Global Education Journey
           <br />
