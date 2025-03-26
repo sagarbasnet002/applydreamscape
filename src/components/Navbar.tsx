@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { logoImage } from "../assets";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,9 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <img src={logoImage} alt="ApplyDreamscape" className="h-10 w-auto" />
+            <Link to="/">
+              <img src={logoImage} alt="ApplyDreamscape" className="h-10 w-auto" />
+            </Link>
             <h1 className="text-2xl font-bold text-primary ml-2">ApplyDreamscape</h1>
           </div>
           
@@ -20,7 +23,9 @@ export const Navbar = () => {
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">Find Programs</a>
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">Universities</a>
             <a href="#" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-            <Button variant="outline" className="mr-2">Sign In</Button>
+            <Link to="/login">
+              <Button variant="outline" className="mr-2">Sign In</Button>
+            </Link>
             <Button className="bg-primary hover:bg-primary-dark text-white">Get Started</Button>
           </div>
 
@@ -37,7 +42,9 @@ export const Navbar = () => {
               <a href="#" className="text-gray-700 hover:text-primary transition-colors">Find Programs</a>
               <a href="#" className="text-gray-700 hover:text-primary transition-colors">Universities</a>
               <a href="#" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-              <Button variant="outline" className="w-full">Sign In</Button>
+              <Link to="/login">
+                <Button variant="outline" className="w-full">Sign In</Button>
+              </Link>
               <Button className="w-full bg-primary hover:bg-primary-dark text-white">Get Started</Button>
             </div>
           </div>

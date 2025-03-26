@@ -1,6 +1,7 @@
 
 import { Mail, Phone, Globe } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Link } from "react-router-dom";
 
 export const TopBar = () => {
   return (
@@ -32,7 +33,7 @@ export const TopBar = () => {
               </SelectContent>
             </Select>
           </div>
-          <a href="#" className="hover:text-gray-200 transition-colors">Login</a>
+          <Link to="/login" className="hover:text-gray-200 transition-colors">Login</Link>
         </div>
       </div>
     </div>
