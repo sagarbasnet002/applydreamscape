@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -59,7 +58,7 @@ const Login = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-light/10 to-white pt-20 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
+      <div className="max-w-lg w-full space-y-8 bg-white p-10 rounded-lg shadow-lg">
         <div className="text-center">
           <University className="mx-auto h-12 w-12 text-primary" />
           <h2 className="mt-6 text-3xl font-bold text-gray-900">
